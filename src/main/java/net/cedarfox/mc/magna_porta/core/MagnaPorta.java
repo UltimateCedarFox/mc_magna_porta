@@ -1,7 +1,7 @@
 package net.cedarfox.mc.magna_porta.core;
 
-/* TODO
- * Role of this class (CustomGates) in the old CustomGates spigot plugin:
+/* ToDo
+ * Role of this class' equivalent (CustomGates) in the old CustomGates spigot plugin:
  * - Entry point to spigot via onEnable() method
  * - Stores some static "global" variables like plugin logger prefix, database name, limits for gates,
  *   list of forbidden gate blocks and allowed signal blocks
@@ -25,7 +25,7 @@ package net.cedarfox.mc.magna_porta.core;
  *      Calls static method connectToDB of DatabaseController, if this throws an error it calls spigots
  *          disablePlugin() on itself
  *      Registers a new CommandHandler object as the executor of the base "/gate" command
- *      Registers a new EventHandler object with the spigot PluginManager.registerEvent() mehtod
+ *      Registers a new EventHandler object with the spigot PluginManager.registerEvent() method
  *      Logs "Plugin enabled"
  *      Tries to find Worldguard plugin via spigot PluginManager, if it finds Worldguard it populates a public static
  *          variable with the Worldguard instance; Worldguard is not a required dependency, so if it does not find it,
